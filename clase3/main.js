@@ -51,6 +51,7 @@ do{
  */
 
 
+
 let intentos = 1
 let identificar =true
 do{
@@ -58,8 +59,8 @@ do{
     if(usuario === null){
         break
     }
-    if(usuario === indexedDB.usser   && intentos <=3){
-        alert("bienvenido " + indexedDB.nombre)
+    if(usuario === "adolfo piña" && intentos <=3){
+        alert("bienvenido adolfo")
         identificar = false
     }else{
         alert("no reconozco el usuario")
