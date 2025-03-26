@@ -34,16 +34,13 @@ function filtrarProductos(){
 
 
 function agregarProducto(){
-
     let nombre = prompt("ingresa el nombre del producto").trim();
     let precio = parseFloat(prompt("ingresa el precio del producto"));
     let stock = parseInt(prompt("ingresa el stock del producto"))
-
     if(isNaN(precio) || isNaN(stock) || nombre === ""){ //si los datos son erroneos o vacios capturo el error
     alert("por favor ingrese datos validos")
     return; // si no pongo que retorne, me guareda el producto como NAN
     }
-
     let producto = new Producto(nombre,precio,stock)
     lista.push(producto)
     console.table(lista)
